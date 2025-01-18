@@ -26,6 +26,7 @@ const AppRoutes = () => {
             <ErrorBoundary FallbackComponent={ErrorFallback}> {/* ErrorBoundary for global error handling */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/contact-us" element={<ContactUs />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/tools/emi-calculator" element={<EmiCalculator />} />

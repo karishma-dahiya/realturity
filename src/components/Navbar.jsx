@@ -25,6 +25,12 @@ const Navbar = () => {
     const [isMobile] = useMediaQuery("(max-width: 768px)");
     const navigate = useNavigate();
 
+    const handleNavigate = (url) => {
+      
+        onClose();
+        navigate(`/${url}`)
+    }
+
     return (
         <Box bg="white"  boxShadow="md" position="sticky" top={0} zIndex={10}>
             <Flex justify="space-between" align="center " px={10} py={1} maxW="1200px" mx="auto">
@@ -72,7 +78,7 @@ const Navbar = () => {
                 <DrawerOverlay />
                 <DrawerContent>
                     <DrawerHeader bg="primary.200" color="white">
-                        <Text fontSize="xl" fontWeight="bold">DSA Website</Text>
+                        <Text textColor="white" fontSize="xl" fontWeight="bold">Realturity</Text>
                         <IconButton
                             aria-label="Close Menu"
                             icon={<CloseIcon />}
@@ -85,16 +91,16 @@ const Navbar = () => {
                     </DrawerHeader>
                     <DrawerBody bg="white" p={4}>
                         <VStack spacing={4} align="start">
-                            <Button variant="link" color="primary.800" onClick={onClose}>
-                                Home
+                            <Button variant="link" color="primary.800" onClick={()=>handleNavigate('/loans')}>
+                                Loans
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={onClose}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/about-us')}>
                                 About
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={onClose}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/tools/emi-calculator')}>
                                 Services
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={onClose}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/contact-us')}>
                                 Contact
                             </Button>
                         </VStack>
