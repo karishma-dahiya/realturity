@@ -91,16 +91,16 @@ const Navbar = () => {
                     </DrawerHeader>
                     <DrawerBody bg="white" p={4}>
                         <VStack spacing={4} align="start">
-                            <Button variant="link" color="primary.800" onClick={()=>handleNavigate('/loans')}>
+                            <Button variant="link" color="primary.800" onClick={()=>handleNavigate('loans')}>
                                 Loans
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/about-us')}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('about-us')}>
                                 About
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/tools/emi-calculator')}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('tools/emi-calculator')}>
                                 Services
                             </Button>
-                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('/contact-us')}>
+                            <Button variant="link" color="primary.800" onClick={() => handleNavigate('contact-us')}>
                                 Contact
                             </Button>
                         </VStack>

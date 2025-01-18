@@ -20,10 +20,10 @@ const Footer = () => {
                         {/* Company */}
                         <Box>
                             <Text fontSize="lg" color="gray.500" mb={2}>Company</Text>
-                            <Link href="/about" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
+                            <Link href="/about-us" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
                                 About Us
                             </Link>
-                            <Link href="/careers" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
+                            <Link href="/contact-us" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
                                 Contact
                             </Link>
                             <Link href="/faq" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
@@ -32,7 +32,7 @@ const Footer = () => {
                             <Link href="/tools/emi-calculator" fontSize="sm" color="white" _hover={{ color: "primary.200" }} mb={1} display="block">
                                 EMI Calculator
                             </Link>
-                            <Link href="/terms-of-service" fontSize="sm" color="white" _hover={{ color: "primary.200" }} display="block">
+                            <Link href="/" fontSize="sm" color="white" _hover={{ color: "primary.200" }} display="block">
                                 Terms of Service
                             </Link>
                         </Box>
